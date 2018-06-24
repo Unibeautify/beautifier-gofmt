@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should successfully beautify Go files should successfully beautify file test.go 1`] = `
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("hello world")
+}
+
+`;
