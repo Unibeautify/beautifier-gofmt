@@ -22,9 +22,9 @@ function testFile(fixtureFileName: string) {
       .beautify({
         languageName: "Go",
         options: {
-          Go: {}
+          Go: {},
         },
-        text
+        text,
       })
       .then(results => {
         expect(raw(results)).toMatchSnapshot();
