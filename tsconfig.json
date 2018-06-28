@@ -5,6 +5,7 @@
         "removeComments": false,
         "preserveConstEnums": true,
         "strictNullChecks": true,
+        "noUnusedLocals": true,
         "sourceMap": true,
         "target": "es6",
         "declaration": true,

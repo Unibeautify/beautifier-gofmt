@@ -3,10 +3,8 @@ import {
   BeautifierBeautifyData,
   DependencyType,
   ExecutableDependency,
-  RunOptions,
 } from "unibeautify";
 import * as readPkgUp from "read-pkg-up";
-import * as path from "path";
 
 const { pkg } = readPkgUp.sync({ cwd: __dirname });
 
@@ -29,6 +27,7 @@ export const beautifier: Beautifier = {
       type: DependencyType.Executable,
       name: "Gofmt",
       program: "gofmt",
+      parseVersion: () => "0.0.0",
       homepageUrl: "https://golang.org/cmd/gofmt/",
       installationUrl: "https://golang.org/doc/install",
       bugsUrl: "https://github.com/golang/go/issues",

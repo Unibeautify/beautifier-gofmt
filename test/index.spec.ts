@@ -1,4 +1,4 @@
-import { newUnibeautify, Beautifier } from "unibeautify";
+import { newUnibeautify } from "unibeautify";
 import beautifier from "../src";
 
 test("should successfully install beautifier", () => {
